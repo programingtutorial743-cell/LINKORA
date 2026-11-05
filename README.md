@@ -36,7 +36,7 @@ The Worker chooses paths from the verified Firebase UID: `profiles/{uid}/avatar/
 
 ## Deploy the Worker
 
-Prepare `worker/.dev.vars` (ignored by Git) with `SUPABASE_URL` and `SUPABASE_SERVICE_ROLE_KEY`, then run these commands from `worker/`:
+From `worker/`, install Wrangler, authenticate, and run the Worker tests:
 
 ```sh
 npm install
@@ -44,10 +44,9 @@ npm test
 npx wrangler login
 npx wrangler whoami
 npx wrangler secret list
-npm run deploy -- --secrets-file .dev.vars
 ```
 
-The final command deploys the Worker and uploads both values as secrets in one deployment. Do not run it until you intend to deploy. `wrangler secret list` shows configured names, not values. `npx wrangler secret put KEY` is an alternative, but Cloudflare deploys a new Worker version immediately for each such command. The Worker reads `SUPABASE_URL` and `SUPABASE_SERVICE_ROLE_KEY` only from its environment; neither value belongs in source code or frontend configuration. Keep `FIREBASE_PROJECT_ID` set to `linkora-d6e85` in `worker/wrangler.toml`. Set `ALLOWED_ORIGINS` there to exact origins (currently `https://linkora-61l.pages.dev`); origins must not include a trailing slash.
+Configure the required Cloudflare Worker secrets without placing their values in files or source code. You can either run `npx wrangler secret put SUPABASE_URL` and `npx wrangler secret put SUPABASE_SERVICE_ROLE_KEY` (enter each value when prompted; each command deploys a new Worker version), or prepare `worker/.dev.vars` locally (it is ignored by Git) with `SUPABASE_URL` and `SUPABASE_SERVICE_ROLE_KEY` and deploy with `npm run deploy -- --secrets-file .dev.vars`. Do not run the deploy command until you intend to deploy. `wrangler secret list` shows configured names, not values. The Worker reads both Supabase values only from its environment; neither belongs in source code or frontend configuration. Keep `FIREBASE_PROJECT_ID` set to `linkora-d6e85` in `worker/wrangler.toml` and set `ALLOWED_ORIGINS` to exact site origins without trailing slashes (including `https://linkora-61l.pages.dev` and the localhost origins used for development).
 
 After deployment, set the public, non-secret Worker URL in `js/config.js`:
 
