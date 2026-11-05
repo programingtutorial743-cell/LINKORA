@@ -1,0 +1,12 @@
+name = "linkora-storage"
+main = "src/index.js"
+compatibility_date = "2026-11-05"
+workers_dev = true
+
+[vars]
+FIREBASE_PROJECT_ID = "linkora-d6e85"
+# Add production Pages origin(s) here and keep localhost entries for local development.
+ALLOWED_ORIGINS = "http://localhost:8000,http://127.0.0.1:8000,http://localhost:8787,http://127.0.0.1:8787,https://linkora-61l.pages.dev"
+
+[secrets]
+required = ["SUPABASE_URL", "SUPABASE_SERVICE_ROLE_KEY"]
