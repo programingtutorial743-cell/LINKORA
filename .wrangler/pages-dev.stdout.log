@@ -1,0 +1,19 @@
+
+ ⛅️ wrangler 4.158.0
+────────────────────
+No Functions. Shimming...
+✨ Parsed 1 valid redirect rule.
+Using secrets defined in worker\.dev.vars
+Your Worker has access to the following bindings:
+Binding                                                                         Resource                  Mode
+env.CF_PAGES ("1")                                                              Environment Variable      local
+env.CF_PAGES_BRANCH ("main")                                                    Environment Variable      local
+env.CF_PAGES_COMMIT_SHA ("a5a76d50a0293ced9df9280a76df784f07ba5...")            Environment Variable      local
+env.CF_PAGES_URL ("https://a5a76d5.LINKORA.pages.dev")                          Environment Variable      local
+env.FIREBASE_PROJECT_ID ("linkora-d6e85")                                       Environment Variable      local
+env.ALLOWED_ORIGINS ("http://localhost:8000,http://127.0.0....")                Environment Variable      local
+env.SUPABASE_URL ("(hidden)")                                                   Environment Variable      local
+env.SUPABASE_SERVICE_ROLE_KEY ("(hidden)")                                      Environment Variable      local
+
+⎔ Starting local server...
+[wrangler:info] Ready on http://127.0.0.1:8000

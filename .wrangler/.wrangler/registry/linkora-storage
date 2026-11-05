@@ -1,0 +1,6 @@
+{
+  "debugPortAddress": "127.0.0.1:60250",
+  "defaultEntrypointService": "core:user:linkora-storage",
+  "userWorkerService": "core:user:linkora-storage",
+  "instanceId": "6fe56729-b976-409d-9a84-f38c5c5c831b"
+}

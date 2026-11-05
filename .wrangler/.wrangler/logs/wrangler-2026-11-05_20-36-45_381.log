@@ -1,0 +1,121 @@
+
+--- 2026-11-05T20:36:45.645Z debug
+🪵  Writing logs to "C:\Users\Uriel Michael\OneDrive\Desktop\LINKORA\.wrangler\.wrangler\logs\wrangler-2026-11-05_20-36-45_381.log"
+---
+
+--- 2026-11-05T20:36:45.645Z debug
+.env file not found at "C:\Users\Uriel Michael\OneDrive\Desktop\LINKORA\.env". Continuing... For more details, refer to https://developers.cloudflare.com/workers/wrangler/system-environment-variables/
+---
+
+--- 2026-11-05T20:36:45.647Z debug
+.env file not found at "C:\Users\Uriel Michael\OneDrive\Desktop\LINKORA\.env.local". Continuing... For more details, refer to https://developers.cloudflare.com/workers/wrangler/system-environment-variables/
+---
+
+--- 2026-11-05T20:36:45.694Z log
+
+ ⛅️ wrangler 4.158.0
+────────────────────
+---
+
+--- 2026-11-05T20:36:45.803Z warn
+▲ [WARNING] No compatibility_date was specified. Using the default compatibility date: 2026-11-04.
+
+  ❯❯ Add one to your Wrangler configuration file: compatibility_date = "2026-11-04", or
+  ❯❯ Pass it in your terminal: wrangler pages dev [<DIRECTORY>] --compatibility-date=2026-11-04
+  
+  See https://developers.cloudflare.com/workers/platform/compatibility-dates/ for more information.
+
+
+---
+
+--- 2026-11-05T20:36:45.804Z log
+No Functions. Shimming...
+---
+
+--- 2026-11-05T20:36:46.284Z log
+✨ Parsed 1 valid redirect rule.
+---
+
+--- 2026-11-05T20:36:46.287Z debug
+setting config
+---
+
+--- 2026-11-05T20:36:46.287Z debug
+Updating config... undefined undefined
+---
+
+--- 2026-11-05T20:36:46.309Z debug
+Metrics dispatcher: Posting data {"deviceId":"fd9db75b-e294-4aa4-83dd-06959ba51192","event":"wrangler command started","timestamp":1793911006309,"properties":{"amplitude_session_id":1793911005696,"amplitude_event_id":0,"wranglerVersion":"4.158.0","wranglerMajorVersion":4,"wranglerMinorVersion":158,"wranglerPatchVersion":0,"osPlatform":"Windows","osVersion":"Windows 11 Pro","nodeVersion":24,"isFirstUsage":false,"configFileType":"none","isCI":false,"isPagesCI":false,"isWorkersCI":false,"isInteractive":false,"hasAssets":false,"agent":"codex","argsUsed":["port"],"argsCombination":"port","sanitizedCommand":"pages dev","sanitizedArgs":{},"currentAgentSkillsInstalled":false}}
+---
+
+--- 2026-11-05T20:36:46.321Z debug
+Metrics dispatcher: Failed to send request: fetch failed
+---
+
+--- 2026-11-05T20:36:46.342Z log
+Using secrets defined in worker\.dev.vars
+---
+
+--- 2026-11-05T20:36:46.346Z log
+Your Worker has access to the following bindings:
+---
+
+--- 2026-11-05T20:36:46.347Z log
+Binding                                                                         Resource                  Mode
+---
+
+--- 2026-11-05T20:36:46.347Z log
+env.CF_PAGES ("1")                                                              Environment Variable      local
+---
+
+--- 2026-11-05T20:36:46.347Z log
+env.CF_PAGES_BRANCH ("main")                                                    Environment Variable      local
+---
+
+--- 2026-11-05T20:36:46.347Z log
+env.CF_PAGES_COMMIT_SHA ("a5a76d50a0293ced9df9280a76df784f07ba5...")            Environment Variable      local
+---
+
+--- 2026-11-05T20:36:46.347Z log
+env.CF_PAGES_URL ("https://a5a76d5.LINKORA.pages.dev")                          Environment Variable      local
+---
+
+--- 2026-11-05T20:36:46.348Z log
+env.FIREBASE_PROJECT_ID ("linkora-d6e85")                                       Environment Variable      local
+---
+
+--- 2026-11-05T20:36:46.348Z log
+env.ALLOWED_ORIGINS ("http://localhost:8000,http://127.0.0....")                Environment Variable      local
+---
+
+--- 2026-11-05T20:36:46.348Z log
+env.SUPABASE_URL ("(hidden)")                                                   Environment Variable      local
+---
+
+--- 2026-11-05T20:36:46.348Z log
+env.SUPABASE_SERVICE_ROLE_KEY ("(hidden)")                                      Environment Variable      local
+---
+
+--- 2026-11-05T20:36:46.348Z log
+
+---
+
+--- 2026-11-05T20:36:46.399Z debug
+Metrics dispatcher: Posting data {"deviceId":"fd9db75b-e294-4aa4-83dd-06959ba51192","event":"run pages dev","timestamp":1793911006399,"properties":{"amplitude_session_id":1793911006398,"amplitude_event_id":0,"wranglerVersion":"4.158.0","wranglerMajorVersion":4,"wranglerMinorVersion":158,"wranglerPatchVersion":0,"osPlatform":"Windows","osVersion":"Windows 11 Pro","nodeVersion":24,"isFirstUsage":false,"configFileType":"none","isCI":false,"isPagesCI":false,"isWorkersCI":false,"isInteractive":false,"hasAssets":false,"agent":"codex","category":"Workers","os":"win32:x64","currentAgentSkillsInstalled":false}}
+---
+
+--- 2026-11-05T20:36:46.405Z debug
+Metrics dispatcher: Failed to send request: fetch failed
+---
+
+--- 2026-11-05T20:36:46.620Z debug
+RemoteRuntimeController teardown beginning...
+---
+
+--- 2026-11-05T20:36:46.620Z debug
+RemoteRuntimeController teardown complete
+---
+
+--- 2026-11-05T20:36:46.625Z log
+⎔ Starting local server...
+---
